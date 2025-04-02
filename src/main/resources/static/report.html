@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Employee Wellness Report</title>
+        
+        <!--Link to external CSS file-->
+        <link rel="stylesheet" href="css/report_style.css"> 
+    </head>
+    <body>
+        <div class="report">
+            <h2>Employee Wellness Report</h2>
+            <table id="reportTable">
+                <thead>
+                    <tr>
+                        <th>Employee ID</th>
+                        <th>Name</th>
+                        <th>Title</th>
+                        <th>Wellness Score</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="reportBody">
+                    <!-- Data will be inserted here dynamically -->
+                </tbody>
+            </table>
+            <button onclick="exportCSV()">Export All Reports (CSV)</button>
+            <button onclick="window.location.href='admin_dashboard.html'">Back to Dashboard</button>
+            
+        </div>
+        
+        <!--Link to external JS file-->
+        <script src="js/wellness_report.js"></script>
+
+    </body>
+</html>
+

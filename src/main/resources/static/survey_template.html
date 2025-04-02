@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survey Template Management</title>
+        
+        <!--Link to external CSS file-->
+        <link rel="stylesheet" href="css/template_style.css">
+    </head>
+    <body>
+        <h2>Survey Template Management</h2>
+        <div class="container">
+            
+            <!-- Left Side: Create Survey Form -->
+            <div class="left">
+                <h2>Create Survey</h2>
+                <form id="createSurveyForm">
+                    <label for="title">Survey Title:</label>
+                    <input type="text" id="title" required>
+                    <br>
+                    <div id="questionsContainer">
+                        <label>Questions:</label>
+                        <input type="text" class="question" required>
+                    </div>
+                    <button type="button" id="add_ques" onclick="addQuestion()">Add Question</button>
+                    <br>
+                    <button type="submit" id="create">Create Survey</button>
+                </form>
+            </div>
+        
+            <!-- Right Side: Existing Surveys -->
+            <div class="right">
+                <h2>Existing Surveys</h2>
+                <ul id="surveyList"></ul>
+            </div>
+        </div>
+        <button id="back_to_dashboard" onclick="window.location.href='admin_dashboard.html'">Back to Dashboard</button>
+        
+        
+        <!--Link to external JS file-->
+        <script src="js/survey_template.js"></script>
+    </body>
+</html>

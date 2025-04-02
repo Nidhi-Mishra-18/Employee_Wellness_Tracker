@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survey Management</title>
+        
+        <!--Link to external CSS file-->
+        <link rel="stylesheet" href="css/template_style.css">
+    </head>
+    <body>
+        <form id="updateSurveyForm">
+            <label for="updateTitle">Survey Title:</label>
+            <input type="text" id="updateTitle" required>
+            <br>
+            <div id="updateQuestionsContainer">
+                <input type="text" class="updateQuestion" required>
+            </div>
+            <button type="button" id="add_ques" onclick="addQuestion()">Add Question</button>
+            <br>
+            <button type="submit" id="update">Update Survey</button>
+        </form>
+        <button id="back_to_dashboard" onclick="window.location.href='admin_dashboard.html'">Back to Dashboard</button>
+        
+        <!--Link to external JS file-->
+        <script src="js/update_template.js"></script>
+        
+    </body>
+</html>
+
+
+

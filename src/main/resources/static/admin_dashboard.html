@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin Dashboard</title>
+        
+        <!--Link to external CSS file-->
+        <link rel="stylesheet" href="css/style.css">
+        
+        <!--Link to external JS file-->
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+
+        <!-- Navigation Bar -->
+        <nav>
+            <div class="nav-container">
+                <img src="logo.png" alt="Company Logo" class="logo2">
+                <h2 class="logo1">Wellness  Tracker</h2>
+                <ul class="nav-links">
+                    <li><a href="/admin_dashboard.html">Dashboard</a></li>
+                    <li><a href="/manage_employee.html"> Manage Employees</a></li>
+                    <li><a href="#" onclick="logout()">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Dashboard Content -->
+        <div class="dashboard-container">
+            <h2>Welcome, Admin!</h2>
+            <div class="admin-container">
+                <div class="left">
+                    <h3>Survey Templates</h3>
+                    <p>Manage and customize wellness survey templates for employees. <br>Create, edit, or remove questions to ensure relevant feedback collection.</p>
+                    <button id="manage-btn" onclick="window.location.href='survey_template.html'">Manage Templates</button>
+                </div>
+            
+                <div class="right">
+                    <h3>Report</h3>
+                    <p>View analytics and reports based on employee survey responses.<br> Track wellness trends and generate insights for workplace improvements.</p>
+                    <button id="view-btn" onclick="window.location.href='report.html'">View Reports</button>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <footer>
+            <p>&copy; 2025 Employee Wellness Tracker | All Rights Reserved</p>
+        </footer>
+
+    </body>
+</html>
+

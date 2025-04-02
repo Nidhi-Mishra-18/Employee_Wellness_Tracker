@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register</title>
+
+        <!--Link to external CSS file-->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!--Link to external JS file-->
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <div class="register-container">
+            <img src="logo.png" alt="Company Logo" class="logo">
+            
+            <!--Registration Form-->
+            <h2>Employee Registration</h2>
+            <table>
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" id="name" placeholder="Enter your name"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" placeholder="Enter your email"></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Phone:</label></td>
+                    <td><input type="text" id="phone" placeholder="Enter your phone number"></td>
+                </tr>
+                <tr>
+                    <td><label for="department">Department:</label></td>
+                    <td><input type="text" id="department" placeholder="Enter your department"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" id="password" placeholder="Enter your password" ></td>
+                </tr>
+            </table>
+
+            <!--Register Button-->
+            <button id="register_btn" onclick="register()">Register</button>
+
+            <!--Login button-->
+            <div class="login-link">
+                <p>Already have an account? <a href="login.html">Login</a>.</p>
+            </div>
+        </div>
+    </body>
+</html>

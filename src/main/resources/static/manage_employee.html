@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Employees</title>
+
+    <!--Link to external CSS file-->
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+        <nav>
+            <div class="nav-container">
+                <img src="logo.png" alt="Company Logo" class="logo2">
+                <h2 class="logo1">Wellness  Tracker</h2>
+                <ul class="nav-links">
+                    <li><a href="admin_dashboard.html">Dashboard</a></li>
+                    <li><a href="add_employee.html"> Add Employees</a></li>
+                    <li><a href="#" onclick="logout()">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    <!--Employee Data Table-->
+    <div class="content">
+        <table>
+            <thead>
+                <tr>
+                    <th>Employee ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Department</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="employeeTableBody">
+                <!-- Employee data will be inserted here dynamically -->
+            </tbody>
+        </table>
+
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <p>&copy; 2025 Employee Wellness Tracker | All Rights Reserved</p>
+    </footer>
+    
+    <!--Link to external JS file-->
+    <script src="js/manage_employee.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Employee Dashboard</title>
+        <link rel="stylesheet" href="css/style.css"> 
+    </head>
+    <body>
+        <nav>
+            <div class="nav-container">
+                <img src="logo.png" alt="Company Logo" class="logo2">
+                <h2 class="logo1">Wellness Tracker</h2>
+                <ul class="nav-links">
+                    <li><a href="#" id="deactivateBtn" onclick="deactivateAccount()">Deactivate Account</a></li>
+                    <li><a href="#" id="updateProfileBtn" onclick="updateProfile()">Update Profile</a></li>
+                    <li><a href="#" id="logoutBtn" onclick="logout()">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="contentSection">
+            <h2>Welcome, Employee!</h2>
+            <div id="surveyListContainer">
+                <h2>Available Surveys</h2>
+                <ul id="surveyList"></ul>
+            </div>
+        
+            <!-- Survey Submission -->
+            <div id="surveyContainer" style="display: none;">
+                <h2>Submit Survey Response</h2>
+                <form id="surveyForm">
+                    <label id="title" for="surveyTitle">Survey Title:</label>
+                    <input type="text" id="surveyTitle" readonly>
+                    <div id="questionsContainer"></div>
+                    <button id="sub_response" type="submit">Submit Response</button>
+                </form>
+            </div>
+        
+            <!-- Survey Submission History -->
+            <div id="surveyHistoryContainer" >
+                <h2>Your Survey Submissions</h2>
+                <ul id="surveyHistoryList"></ul>       
+                <button id="viewHistoryBtn" onclick="loadSurveyHistory()">View Submission History</button>
+       
+            </div>
+        </div>
+
+        <!--Footer-->
+        <footer>
+            <p>&copy; 2025 Employee Wellness Tracker | All Rights Reserved</p>
+        </footer>
+
+        <!--Link to external JS file-->
+        <script src="js/emp_dashboard.js"></script>
+    </body>
+</html>  

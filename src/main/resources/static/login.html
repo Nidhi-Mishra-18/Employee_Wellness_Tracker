@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!--Link external CSS File-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Link external JS File-->
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+    <div class="container"><form>
+        <img src="logo.png" alt="Company Logo" class="logo">
+        
+        <h2 >Login</h2>
+        <div class="tab">
+            <button class="tab-btn active" onclick="openTab('adminTab')">Admin Login</button>
+            <button class="tab-btn" onclick="openTab('employeeTab')">Employee Login</button>
+        </div>
+
+        <!-- Admin Login -->
+        <div id="adminTab" class="tabcontent active">
+            <input type="email" id="ADMIN-email" placeholder="Admin Email" required>
+            <input type="password" id="ADMIN-password" placeholder="Password" required>
+            <button onclick="login('ADMIN')" id="admin_login_btn" >Login</button>
+        </div>
+
+        <!-- Employee Login -->
+        <div id="employeeTab" class="tabcontent">
+            <input type="email" id="EMPLOYEE-email" placeholder="Employee Email" required>
+            <input type="password" id="EMPLOYEE-password" placeholder="Password" required>
+            <button  onclick="login('EMPLOYEE')" id="employee_login_btn">Login</button>
+            <p>Don't have an account? <a href="register.html">Register here</a>.</p>
+        </div>
+    </form>
+    </div>
+
+</body>
+</html>
