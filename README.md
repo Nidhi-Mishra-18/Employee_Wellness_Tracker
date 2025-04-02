@@ -11,7 +11,7 @@ The purpose of this system is to:
 ## Features
 ### User Management
 - Admins can create, update, and delete employee profiles.
-- Employees can register, log in, and update their profiles.
+- Employees can register, log in, and update their profiles(via companys mail).
 - Role-based access for Admins and Employees.
 
 ### Wellness Survey Management
