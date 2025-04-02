@@ -1,0 +1,499 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right,skyblue,white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+}
+
+.logo {
+    width: 150px; /* Adjust size */
+    display: block;
+    margin: 0 auto 15px; /* Center the logo */
+}
+
+.tab {
+    display: flex;
+    justify-content: space-between;
+}
+.tab button {
+    width: 55%;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    background:skyblue;
+}
+.tab button.active {
+    background: darkblue;
+    color: white;
+}
+.tabcontent {
+    display: none;
+    padding: 20px;
+}
+.tabcontent.active {
+    display: block;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    align-self: center;
+}
+
+.tab-btn:hover {
+    background-color: #0056b3;
+}
+
+td input {
+    width: 100%; /* Ensures input does not overflow */
+    box-sizing: border-box; /* Includes padding & border inside the width */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* Admin  and employee Login Button */
+#admin_login_btn ,#employee_login_btn{
+    background-color:green; /* Reddish shade for Admin */
+    color: white;
+    font-weight: bold;
+    margin-top: 1.5em;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-left: 10px;
+}
+
+#admin_login_btn:hover ,#employee_login_btn:hover{
+    background-color: darkgreen;
+}
+
+
+
+/*For register*/
+
+.register-container,.update_container,.addForm{
+    background:ghostwhite;
+    padding-left: 5em;
+    padding-right: 5em;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+    padding-bottom:2em ;
+}
+
+#add_btn{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 2em;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color:green; /* Red */
+    color: white;
+    margin-left: 10px;
+}
+
+#save_btn {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 2em;
+    cursor: pointer;
+    background-color: #28a745; /* Green */
+    color: white;
+}
+
+#save_btn:hover {
+    background-color: #218838; /* Darker Green */
+}
+
+/* Cancel Button Styling */
+#cancel_btn {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 2em;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #dc3545; /* Red */
+    color: white;
+    margin-left: 10px;
+}
+
+#cancel_btn:hover {
+    background-color: #c82333; /* Darker Red */
+}
+
+#register_btn {
+    background-color: green;  /* Blue color */
+    color: white;               /* White text */
+    font-size: 16px;            /* Text size */
+    padding: 10px 20px;         /* Padding for better spacing */
+    border: none;               /* No border */
+    border-radius: 5px;         /* Rounded corners */
+    cursor: pointer;            /* Pointer cursor on hover */
+    width: 100%;                /* Make button full-width inside the table cell */
+    text-align: center;      /* Center align text */
+    margin-top: 2em;
+}
+
+#register_btn:hover {
+    background-color: #0056b3;  /* Darker blue on hover */
+}
+
+
+
+/* Navigation Bar */
+nav {
+    background-color:black; /* Blue */
+    color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; /* Ensures it stays on top */
+}
+
+/* Container for Navbar */
+.nav-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+    
+}
+
+.nav-links a {
+    text-decoration:none;
+    font-weight: bold;
+    color: white;
+    font-size: 1.2em;
+    padding: 12px 12px;
+    padding-right: 2em;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    background-color:red;
+}
+
+/* Add Padding to Page Content (to avoid hiding under navbar) */
+.content, .dashboard_container {
+    padding-top: 8em; /* Push content below navbar */
+    padding-bottom: 5em; /* Space for footer */
+    width: 100%;
+    overflow: auto;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin: auto;
+}
+.logo2 {
+    width: 5em; /* Adjust as needed */
+    height: auto; 
+    /* Reduce space */
+}
+
+.logo1 {
+    font-size: 2em;
+    color: white;
+    margin-left: -17em;
+}
+
+#manage-btn,#view-btn{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 2em;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color:green; /* Red */
+    color: white;
+    
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 10px;
+    }
+}
+
+.edit-btn, .delete-btn, .upgrade-btn {
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 2px;
+}
+
+.edit-btn {
+    background: #ffc107;
+    color: black;
+}
+
+.edit-btn:hover {
+    background: #e0a800;
+}
+
+.delete-btn {
+    background: #dc3545;
+    color: white;
+}
+
+.delete-btn:hover {
+    background: #c82333;
+}
+
+.upgrade-btn{
+    background:green;
+    color: black;
+}
+
+.upgrade-btn:hover{
+    background: darkgreen;
+}
+
+table {
+    margin-top: 5em;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: auto;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid white;
+    text-align: left;
+}
+
+th {
+    background: #007bff;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+tr:hover {
+    background: #e0e0e0;
+}
+
+
+/* Headings */
+h2 {
+    text-align: center;
+    color: black;
+}
+
+
+
+.admin-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    overflow: auto;
+}
+
+/* Left (Create Survey Form) */
+.left {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Right (Existing Surveys) */
+.right {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styling */
+footer {
+    background-color:black;  /* Blue background */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    margin-top: 10em;
+}
+
+/* Styling the survey list container */
+#surveyListContainer ,#surveyHistoryContainer{
+    width: 60%;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, skyblue,white);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+#surveyContainer{
+    width: 60%;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom,skyblue,white);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+/* Heading Style */
+
+/* Styling the survey list */
+#surveyList {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Styling each survey item */
+#surveyList li{
+    background: white;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Hover effect */
+#surveyList li:hover {
+    transform: scale(1.02);
+}
+
+/* Buttons inside the survey list */
+#surveyList li button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+
+
+#surveyList li button:hover {
+    background-color: #0056b3;
+}
+
+#viewHistoryBtn,
+#sub_response{
+    background-color:green;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+/* Styling for survey answer input fields */
+.surveyAnswer {
+    width: 100%;  /* Make inputs take full width */
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Styling for survey questions */
+.question {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+    display: block;  /* Ensures questions appear on new lines */
+}
+
+/* Optional: Improve form layout */
+#questionsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;  /* Space between questions */
+}
+
+label#title{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.contentSection{
+    padding-top: 30em; /* Push content below navbar */
+    padding-bottom: 5em; /* Space for footer */
+    width: 100%;
+    overflow: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+

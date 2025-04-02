@@ -1,0 +1,240 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background:linear-gradient(to left,skyblue,white);
+    text-align: center;
+}
+
+/* Headings */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #444;
+    margin-top: 30px;
+}
+
+/* Forms */
+form {
+    background:white;
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Input Fields */
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Buttons */
+button#add_ques{
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 8px 11px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button#add_ques:hover {
+    background-color: darkgreen;
+}
+
+button#create{
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 3em;
+    margin-left: 8em;
+}
+
+button#create:hover {
+    background-color:darkblue;
+}
+
+button#back_to_dashboard{
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button#back_to_dashboard:hover{
+    background: darkblue;
+}
+/* Survey List */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: white;
+    padding: 10px;
+    margin: 5px auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Buttons inside survey list */
+ul li button#edit_btn{
+    background-color:green;
+    padding: 12px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+ul li button#edit_btn:hover  {
+    background-color: darkgreen;
+}
+
+ul li button#delete_btn{
+    background-color: #dc3545;
+    padding: 12px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+ul li button#delete_btn:hover {
+    background-color: #c82333;
+}
+
+
+/* Layout: Two Columns Side by Side */
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Left (Create Survey Form) */
+.left {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Right (Existing Surveys) */
+.right {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* General form styling */
+#updateSurveyForm {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Label styling */
+#updateSurveyForm label {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Input field styling */
+#updateTitle,
+.updateQuestion {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Question container */
+#updateQuestionsContainer {
+    margin-bottom: 10px;
+}
+
+/* Button styling */
+#add_ques, #update {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#add_ques {
+    background-color: #28a745; /* Green */
+}
+
+#add_ques:hover {
+    background-color: #218838;
+}
+
+button#update {
+    background-color: blue; /* Blue */
+}
+
+button#update:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #updateSurveyForm {
+        width: 90%;
+    }
+    .container {
+        flex-direction: column; /* Stacks on smaller screens */
+    }
+}
